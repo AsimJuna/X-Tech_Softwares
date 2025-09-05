@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Friends</title>
+  <!-- ! Page Title Icon -->
+  <link rel="icon" href="images/chart-line-solid.svg">
+  <!-- ! Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- ! Main Template CSS File -->
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/framework.min.css">
+  <link rel="stylesheet" href="css/darkMode.min.css">
+  <!-- ! File Of Animations -->
+  <link rel="stylesheet" href="css/aos.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+  <!-- ! Render All Elements Normally -->
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <!-- ! Font Awesome Library -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- ! Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+  <script>
+    window.onload = function () {
+      AOS.init();
+    };
+  </script>
+</head>
+
+<body>
+  <div class="dashboard d-flex">
+    <!-- ! Start Sidebar -->
+    <div class="sidebar bg-white position-relative">
+      <div class="holder position-fixed">
+        <h3 class="position-relative text-center fw-bold">Asim</h3>
+        <div class="links">
+          <ul>
+            <li>
+              <a class="d-flex align-items-center" href="index.html">
+                <i class="fa-regular fa-chart-bar fa-fw"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex align-items-center" href="settings.html">
+                <i class="fa-solid fa-gear fa-fw"></i>
+                <span>Get Register</span>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex align-items-center" href="profile.html">
+                <i class="fa-regular fa-user fa-fw"></i>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex align-items-center" href="projects.html">
+                <i class="fa-solid fa-diagram-project fa-fw"></i>
+                <span>Projects</span>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex align-items-center" href="statistics.html">
+                <i class="fa-solid fa-chart-simple fa-fw"></i>
+                <span>Statistics</span>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex align-items-center" href="courses.html">
+                <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                <span>Courses</span>
+              </a>
+            </li>
+            <li>
+              <a class="active d-flex align-items-center" href="partners.html">
+                <i class="fa-regular fa-circle-user fa-fw"></i>
+                <span>Team</span>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex align-items-center" href="files.html">
+                <i class="fa-regular fa-file fa-fw"></i>
+                <span>Data</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- ! End Sidebar -->
+    <!-- ! Start Content -->
+    <div class="content">
+      <!-- ! Start Header -->
+      <div class="header bg-white d-flex justify-content-between align-items-center">
+        <div class="search position-relative">
+          <input type="text" id="keywordInput" placeholder="Type A Keyword" name="keyword">
+          <i class="fa-solid fa-search"></i>
+        </div>
+        <button id="darkmode-button" class="btn rounded-circle">
+          <i class="fa-solid fa-moon toggle-icon"></i>
+        </button>
+        <div class="notifications d-flex align-items-center">
+          <i class="fa-regular fa-bell fa-lg"></i>
+        </div>
+        <div id="notif-container" class="notif-container">
+          <ul id="notif-list" class="show">
+            <h4>Notifications</h4>
+            <li>
+              <a href="https://gzixnine.github.io/Template_Three/#events" target="_blank">
+                <img src="images/team-05.png" alt="Avatar">
+                <div>
+                  <span>Payment recieved from a client.</span>
+                  <span>12 Hours Ago</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#"><img src="images/team-01.png" alt="Avatar">
+                <div>
+                  <span>Ahmed followed you on GitHub.</span>
+                  <span>19 Hours Ago</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/team-03.png" alt="Avatar">
+                <div>
+                  <span>Pending request from Ahlam.</span>
+                  <span>23 Hours Ago</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/team-04.png" alt="Avatar">
+                <div>
+                  <span>Payment recieved from Ema White.</span>
+                  <span>7 Hours Ago</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/team-05.png" alt="Avatar">
+                <div>
+                  <span>Ahmed wants to collaborate with you.</span>
+                  <span>10 Hours Ago</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/team-02.png" alt="Avatar">
+                <div>
+                  <span>Sana deployed a repositary.</span>
+                  <span>8 Hours Ago</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/team-03.png" alt="Avatar">
+                <div>
+                  <span>Trishtha replied to you request.</span>
+                  <span>2 Hours Ago</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="profile">
+          <a href="profile.html">
+            <img src="images/Asim.jpeg" alt="" />
+            <span>Asim</span>
+          </a>
+        </div>
+      </div>
+      <!-- ! End Header -->
+      <!-- ! Start Friends -->
+      <h1 class="position-relative header-page">Team Members</h1>
+      <div class="friends-page d-grid">
+        <div class="friend mega" data-aos="fade-up" data-aos-delay="250">
+          <div class="contact">
+            <i class="fa-solid fa-phone tel"></i>
+            <i class="fa-regular fa-envelope tel"></i>
+          </div>
+          <div class="text-center">
+            <img src="images/Aniya.jpg" alt="" />
+            <h4>Aniya Faisal</h4>
+            <p>CEO & Founder</p>
+          </div>
+          <div class="icons position-relative">
+            <div>
+              <i class="fa-regular fa-face-smile fa-fw"></i>
+              <span>9569 Followers</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-code-commit fa-fw"></i>
+              <span>48 Projects</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-newspaper fa-fw"></i>
+              <span>08 Articles</span>
+            </div>
+            <span class="vip fw-bold c-orange">VIP</span>
+          </div>
+          <div class="info">
+            <span>Started on 01/10/2021</span>
+            <div>
+              <a class="bg-blue" href="profile.html">Profile</a>
+              <a class="bg-red" href="#">Remove</a>
+            </div>
+          </div>
+        </div>
+        <div class="friend mega" data-aos="fade-up" data-aos-delay="250">
+          <div class="contact">
+            <i class="fa-solid fa-phone tel"></i>
+            <i class="fa-regular fa-envelope tel"></i>
+          </div>
+          <div class="text-center">
+            <img src="images/Sarah.jpg" alt="" />
+            <h4>Sara Ibrahim</h4>
+            <p>Full Stack Developer & Co-Founder</p>
+          </div>
+          <div class="icons position-relative">
+            <div>
+              <i class="fa-regular fa-face-smile fa-fw"></i>
+              <span>39 Followers</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-code-commit fa-fw"></i>
+              <span>13 Projects</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-newspaper fa-fw"></i>
+              <span>01 Articles</span>
+            </div>
+          </div>
+          <div class="info">
+            <span>Started on 01/10/2021</span>
+            <div>
+              <a class="bg-blue" href="profile.html">Profile</a>
+              <a class="bg-red" href="">Remove</a>
+            </div>
+          </div>
+        </div>
+        <div class="friend mega" data-aos="fade-up" data-aos-delay="250">
+          <div class="contact">
+            <i class="fa-solid fa-phone tel"></i>
+            <i class="fa-regular fa-envelope tel"></i>
+          </div>
+          <div class="text-center">
+            <img src="images/Asim.jpeg" alt="" />
+            <h4>Asim Juna</h4>
+            <p>Front End Developer & Co-Founder</Co-Founder></p>
+          </div>
+          <div class="icons position-relative">
+            <div>
+              <i class="fa-regular fa-face-smile fa-fw"></i>
+              <span>82 Followers</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-code-commit fa-fw"></i>
+              <span>24 Projects</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-newspaper fa-fw"></i>
+              <span>Working on Research</span>
+            </div>
+          </div>
+          <div class="info">
+            <span>Joined 30/11/2024</span>
+            <div>
+              <a class="bg-blue" href="profile.html">Profile</a>
+              <a class="bg-red" href="">Remove</a>
+            </div>
+          </div>
+        </div>
+        <div class="friend mega" data-aos="fade-left" data-aos-delay="250">
+          <div class="contact">
+            <i class="fa-solid fa-phone tel"></i>
+            <i class="fa-regular fa-envelope tel"></i>
+          </div>
+          <div class="text-center">
+            <img src="images/Trishtha.jpg" alt="" />
+            <h4>Trishta</h4>
+            <p>Cloud Computing</p>
+          </div>
+          <div class="icons position-relative">
+            <div>
+              <i class="fa-regular fa-face-smile fa-fw"></i>
+              <span>70 Followers</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-code-commit fa-fw"></i>
+              <span>30 Projects</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-newspaper fa-fw"></i>
+              <span>00 Articles</span>
+            </div>
+          </div>
+          <div class="info">
+            <span>Joined 15/11/2022</span>
+            <div>
+              <a class="bg-blue" href="profile.html">Profile</a>
+              <a class="bg-red" href="">Remove</a>
+            </div>
+          </div>
+        </div>
+        <div class="friend mega" data-aos="fade-left" data-aos-delay="250">
+          <div class="contact">
+            <i class="fa-solid fa-phone tel"></i>
+            <i class="fa-regular fa-envelope tel"></i>
+          </div>
+          <div class="text-center">
+            <img src="images/Moiz.jpg" alt="" />
+            <h4>Moiz Hassan</h4>
+            <p>AWS Engineer</p>
+          </div>
+          <div class="icons position-relative">
+            <div>
+              <i class="fa-regular fa-face-smile fa-fw"></i>
+              <span>80 Followers</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-code-commit fa-fw"></i>
+              <span>30 Projects</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-newspaper fa-fw"></i>
+              <span>00 Articles</span>
+            </div>
+          </div>
+          <div class="info">
+            <span>Joined 23/12/2022</span>
+            <div>
+              <a class="bg-blue" href="profile.html">Profile</a>
+              <a class="bg-red" href="">Remove</a>
+            </div>
+          </div>
+        </div>
+        <div class="friend mega" data-aos="fade-left" data-aos-delay="250">
+          <div class="contact">
+            <i class="fa-solid fa-phone tel"></i>
+            <i class="fa-regular fa-envelope tel"></i>
+          </div>
+          <div class="text-center">
+            <img src="images/Aiman Khan.jpg" alt="" />
+            <h4>Aiman Khan</h4>
+            <p>C# Developer</p>
+          </div>
+          <div class="icons position-relative">
+            <div>
+              <i class="fa-regular fa-face-smile fa-fw"></i>
+              <span>539 Followers</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-code-commit fa-fw"></i>
+              <span>13 Projects</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-newspaper fa-fw"></i>
+              <span>02 Articles</span>
+            </div>
+          </div>
+          <div class="info">
+            <span>Joined 28/06/2022</span>
+            <div>
+              <a class="bg-blue" href="profile.html">Profile</a>
+              <a class="bg-red" href="">Remove</a>
+            </div>
+          </div>
+        </div>
+        <div class="friend mega" data-aos="fade-right" data-aos-delay="250">
+          <div class="contact">
+            <i class="fa-solid fa-phone tel"></i>
+            <i class="fa-regular fa-envelope tel"></i>
+          </div>
+          <div class="text-center">
+            <img src="images/Alvina.jpg" alt="" />
+            <h4>Alvina</h4>
+            <p>Web Application Developer</p>
+          </div>
+          <div class="icons position-relative">
+            <div>
+              <i class="fa-regular fa-face-smile fa-fw"></i>
+              <span>30 Followers</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-code-commit fa-fw"></i>
+              <span>11 Projects</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-newspaper fa-fw"></i>
+              <span>01 Articles</span>
+            </div>
+          </div>
+          <div class="info">
+            <span>Joined 01/02/2024</span>
+            <div>
+              <a class="bg-blue" href="profile.html">Profile</a>
+              <a class="bg-red" href="">Remove</a>
+            </div>
+          </div>
+        </div>
+        <div class="friend mega" data-aos="fade-right" data-aos-delay="250">
+          <div class="contact">
+            <i class="fa-solid fa-phone tel"></i>
+            <i class="fa-regular fa-envelope tel"></i>
+          </div>
+          <div class="text-center">
+            <img src="images/Ahmad.jpg" alt="" />
+            <h4>Ahmed Faheem</h4>
+            <p>DevOps Engineer</p>
+          </div>
+          <div class="icons position-relative">
+            <div>
+              <i class="fa-regular fa-face-smile fa-fw"></i>
+              <span>80 Followers</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-code-commit fa-fw"></i>
+              <span>30 Projects</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-newspaper fa-fw"></i>
+              <span>03 Articles</span>
+            </div>
+            <span class="vip fw-bold c-orange">Vip</span>
+          </div>
+          <div class="info">
+            <span>Joined 15/06/2023</span>
+            <div>
+              <a class="bg-blue" href="profile.html">Profile</a>
+              <a class="bg-red" href="">Remove</a>
+            </div>
+          </div>
+        </div>
+        <div class="friend mega" data-aos="fade-right" data-aos-delay="250">
+          <div class="contact">
+            <i class="fa-solid fa-phone tel"></i>
+            <i class="fa-regular fa-envelope tel"></i>
+          </div>
+          <div class="text-center">
+            <img src="images/Ayesha.jpg" alt="" />
+            <h4>Ayesha Shahid</h4>
+            <p>Blockchain Developer</p>
+          </div>
+          <div class="icons position-relative">
+            <div>
+              <i class="fa-regular fa-face-smile fa-fw"></i>
+              <span>32 Followers</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-code-commit fa-fw"></i>
+              <span>01 Projects</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-newspaper fa-fw"></i>
+              <span>03 Articles</span>
+            </div>
+            <span class="vip fw-bold c-orange">Vip</span>
+          </div>
+          <div class="info">
+            <span>Joined 25/08/2025</span>
+            <div>
+              <a class="bg-blue" href="profile.html">Profile</a>
+              <a class="bg-red" href="">Remove</a>
+            </div>
+          </div>
+        </div>
+        <div class="friend mega" data-aos="fade-up" data-aos-delay="250">
+          <div class="contact">
+            <i class="fa-solid fa-phone tel"></i>
+            <i class="fa-regular fa-envelope tel"></i>
+          </div>
+          <div class="text-center">
+            <img src="images/Hamza.jpg" alt="" />
+            <h4>Hamza</h4>
+            <p>Crypto Treasurer</p>
+          </div>
+          <div class="icons position-relative">
+            <div>
+              <i class="fa-regular fa-face-smile fa-fw"></i>
+              <span>513 Followers</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-code-commit fa-fw"></i>
+              <span>00 Projects</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-newspaper fa-fw"></i>
+              <span>00 Articles</span>
+            </div>
+          </div>
+          <div class="info">
+            <span>Joined 25/08/2025</span>
+            <div>
+              <a class="bg-blue" href="profile.html">Profile</a>
+              <a class="bg-red" href="">Remove</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ! End Friends -->
+  </div>
+  <!-- ! End Content -->
+  <!---------------------------------------------------------------------------->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- * This Render Icon As SVG... -->
+  <script src="js/all.min.js"></script>
+  <!-- ! JavaScript File -->
+  <script src="js/main.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
